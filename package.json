@@ -1,14 +1,17 @@
 {
   "name": "copy-open-files",
   "displayName": "Copy Open Files",
-  "description": "This will copy all open files and attach the relative path to the content as well. It's meant to quickly copy and paste into ChatGPT and other LLMs",
-  "version": "0.0.1",
+  "description": "This will copy all open files and attach the relative path to the content as well. It's meant to quickly copy and paste into ChatGPT, Claude, and etc.",
+  "version": "0.0.5",
+  "publisher":"j-y-lau",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.92.0"
   },
   "categories": [
     "Other"
   ],
+  "icon": "icon.png",
   "activationEvents": [
     "onCommand:fileContentsCopier.copyFiles"
   ],
@@ -28,6 +31,10 @@
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
     "test": "vscode-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/j-ylau/copy-open-files"
   },
   "devDependencies": {
     "@types/vscode": "^1.92.0",
